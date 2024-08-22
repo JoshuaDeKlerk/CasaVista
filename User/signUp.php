@@ -91,7 +91,7 @@
                                     var toastContainer = document.querySelector('.toast-container');
                         ";
                         foreach ($errors as $error) {
-                            $toastHtml = "<div class='toast align-items-center text-bg-danger border-0' role='alert' aria-live='assertive' aria-atomic='true'>
+                            $toastHtml = "<div class='toast align-items-center border-0' aria-live='assertive' aria-atomic='true'>
                                             <div class='d-flex'>
                                                 <div class='toast-body'>" . htmlspecialchars($error, ENT_QUOTES, 'UTF-8') . "</div>
                                                 <button type='button' class='btn-close me-2 m-auto' data-bs-dismiss='toast' aria-label='Close'></button>
