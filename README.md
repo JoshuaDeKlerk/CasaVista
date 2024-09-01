@@ -15,7 +15,7 @@ CasaVista is a retail site where you can purchase properties or even list your o
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 [![xampp](https://img.shields.io/badge/xampp-750000?style=for-the-badge&logo=xampp&logoColor=#FB7A24)](https://www.php.net/docs.php)
 
-![CasaVista Home Image](./Assets/ReadMe/HomePage.png)
+<img src="./Assets/ReadMe/HomePage.png" alt="CasaVista Home Image" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);">
 
 ## How To Install
 
@@ -35,12 +35,12 @@ git clone https://github.com/JoshuaDeKlerk/CasaVista.git
 2. **Move Project Files:**
    - Navigate to your XAMPP installation directory (e.g., `C:\xampp\htdocs` on Windows or `/Applications/XAMPP/htdocs` on macOS).
    - Copy the entire project folder to the `htdocs` directory. 
-   - Rename the project folder to `CasaVista` (or any other name you prefer).
+   - Rename the project folder to `CasaVista`
 
 3. **Create the database**
 - Open your browser and go to [phpMyAdmin](http://localhost/phpmyadmin).
 - In phpMyAdmin, click on the "New" button in the sidebar to create a new database.
-- Name your database (e.g., `casavista`) and click "Create."
+- Name your database `casavista` and click "Create."
 
 4. **Import the Database Structure**
 
@@ -65,3 +65,25 @@ git clone https://github.com/JoshuaDeKlerk/CasaVista.git
 ### Step 4: Additional Notes
 - Ensure that the `server.php` file is correctly configured with your database credentials.
 - If there are any issues with permissions, make sure to adjust the folder permissions in the XAMPP `htdocs` directory.
+
+## Features
+
+| Page                  | Description                                        |
+| --------------------- | -------------------------------------------------- |
+| Register Page           | - Allows all users to create a account          |
+|                       | - Allows users to choose between `user` and `agent`  |
+|                       | - Allows users to be saved to the database   |
+| Login Page           | - Allow users to sign into their account to access the website         |
+| Home Page             | - Allows users to access the navigation      |
+|                       | - Agents and `admins` can see more detailed pages
+|                       | - Can access the settings page and logout |
+| Browse Page       | - Allows users to see all the properties listed |
+|                       | -Users can `filter` the properties|
+| List Page      | - Allows agents and admins to list a property to the website              |
+|                       | - Enables agents too chose what type of property it is. |
+| Favorites Page      | - Allows users too favorite their most liked properties          |
+| Admin Page      | - Allows admins to see properties agents want to ad to the website          |
+|                       | - Admins can choose to `View`, `Approve` or `Delete` the property |
+| Individual Page  | - Allows users to see the properties details        |
+|                       | - Provides the ability to buy the property |
+| Settings Page  | - Allows users to change their details        |
