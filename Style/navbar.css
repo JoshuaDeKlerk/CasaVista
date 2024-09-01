@@ -1,0 +1,119 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+/* General Navbar Styling */
+.custom-navbar {
+    background-color: #2E2E2E;
+    padding: 0 100px;
+    height: 10vh;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    height: 40px;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: #E9E9E9;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.nav-item .icon img {
+    margin-left: 20px;
+}
+
+.nav-link:hover {
+    color: #bebebe;
+}
+
+/* Profile Picture Placeholder */
+.profile-picture-placeholder {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-size: cover;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile-picture-placeholder img.profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    display: block;
+}
+
+.profile-text {
+    font-size: 22px;
+    font-weight: 700;
+    color: #E9E9E9;
+}
+
+.dropdown-toggle {
+    background-color: #393939;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 
+        inset 0px 1px 3px rgba(93, 93, 93, 0.5), 
+        0px 4px 4px 0px rgba(0, 0, 0, 0.5),
+        0px 4px 4px 0px #3F3F3F; 
+}
+
+.dropdown-toggle:hover {
+    background-color: #2595A5;
+}
+
+/* Custom Dropdown */
+.custom-dropdown {
+    background-color: #393939;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 
+        inset 0px 1px 3px rgba(93, 93, 93, 0.5), 
+        0px 4px 4px 0px rgba(0, 0, 0, 0.5),
+        0px 4px 4px 0px #3F3F3F; 
+}
+
+.custom-dropdown .dropdown-item {
+    color: #E9E9E9;
+    font-family: "Cinzel", serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #2E2E2E;
+}
+
+.custom-dropdown .dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.custom-dropdown .dropdown-item:hover {
+    background-color: #2595A5;
+    color: #E9E9E9;
+}
+
+/* Specific styling when an image is present */
+.profile-picture-placeholder.has-image img.profile-picture {
+    display: block;
+}

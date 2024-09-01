@@ -35,7 +35,7 @@
                         if ($user) {
                             if (password_verify($password, $user["password"])) {
                                 session_start();
-                                $_SESSION["user"] = "yes";
+                                $_SESSION["user"] = $user["email"];  // Store the user's email in the session
                                 header("Location: ../index.php");
                                 die();
                             } else {

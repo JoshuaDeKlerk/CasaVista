@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Fauna+One&display=swap');
+
+
+
+.browseCont{
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #393939;
+    font-family: 'Fauna One', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Page Title */
+.page-title {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    color: #E9E9E9;
+}
+
+/* Card Styling */
+.card {
+    background-color: #393939;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 
+        0px 4px 4px rgba(0, 0, 0, 0.5),
+        0px 4px 4px #3F3F3F;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0px 6px 6px rgba(0, 0, 0, 0.6),
+        0px 6px 6px #4F4F4F;
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #E9E9E9;
+}
+
+.card-text {
+    color: #bebebe;
+    margin-bottom: 10px;
+}
+
+/* Button Styling */
+.custom-btn {
+    background-color: #2595A5;
+    border: none;
+    border-radius: 500px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    color: #E9E9E9;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #1A6D79;
+    box-shadow: 
+        0px 6px 6px rgba(0, 0, 0, 0.6),
+        0px 6px 6px #4F4F4F;
+}
+
+/* Form Styling */
+.form-label {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    color: #E9E9E9;
+}
+
+.form-select,
+.form-control {
+    background-color: #393939;
+    color: #E9E9E9;
+    border: none;
+    border-radius: 500px;
+    padding: 10px 20px;
+    box-shadow: 
+        inset 0px 1px 3px rgba(93, 93, 93, 0.5), 
+        0px 4px 4px 0px rgba(0, 0, 0, 0.5),
+        0px 4px 4px 0px #3F3F3F;
+    font-family: 'Fauna One', serif;
+    font-size: 1.438rem;
+}
+
+.form-select:focus,
+.form-control:focus {
+    background-color: #2c2c2c;
+    outline: none;
+}
+
+.form-select:hover,
+.form-control:hover {
+    background-color: #333333;
+    box-shadow: 
+        inset 0px 1px 4px rgba(93, 93, 93, 0.7), 
+        0px 4px 6px 0px rgba(0, 0, 0, 0.6),
+        0px 4px 6px 0px #4F4F4F;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-range {
+    background-color: #393939;
+    color: #E9E9E9;
+    border-radius: 500px;
+    width: 200px;
+}
+
+.form-range:focus {
+    background-color: #2c2c2c;
+    outline: none;
+}
