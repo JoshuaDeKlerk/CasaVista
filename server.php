@@ -1,7 +1,7 @@
 <?php
     $hostname = "localhost";
-    $dbUser = "root";  // Make sure this matches your server's database username
-    $dbPassword = "";  // Make sure this matches your server's database password
+    $dbUser = "root";
+    $dbPassword = "";
     $dbName = "casavista";
     
     // Create connection
