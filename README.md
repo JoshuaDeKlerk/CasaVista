@@ -100,3 +100,52 @@ The idea was to create a rental website where users can post houses or apartment
 
 ### Create a Post Page
 ![Create a Post UI Design](./Assets/ReadMe/UI/Home.png)
+
+
+## Development Process
+
+### Highlights
+* Highlights of the website is the simplistic UI and the functionality that gives the user a pleasant user experience.
+* The website is easy to understand and navigate.
+
+### Challenges
+* Getting all the backend to work and when styling some of the backend would break so i would need to go back to fix the backend the whole time.
+* Building the website in such a way that everything is automated, from automatically creating user profiles and displaying only their own properties. The browse page had to show all the properties that where added.
+
+## Future Implementations
+
+* Allow Users to view other user Profiles
+* Allow functionality that will show whether the property was sold or not.
+
+## Mockups
+
+### Register Mockup
+![CasaVista Mockup 1](./Assets/ReadMe/MockUps/SignUp.png)
+
+### Login Mockup
+![CasaVista Mockup 1](./Assets/ReadMe/MockUps/Login.png)
+
+### Home Mockup
+![CasaVista Mockup 1](./Assets/ReadMe/MockUps/Home.png)
+
+## Demonstration
+[Link To Demonstration Video](https://drive.google.com/drive/folders/1gek3j6g_WJgM0EDlCRWWWeSuR6lbve7C?usp=sharing)
+
+### License
+[MIT](LICENSE) © Joshua De Klerk
+
+## Author
+
+- **Joshua De Klerk** - [Github](https://github.com/JoshuaDeKlerk)
+
+## Contact
+
+- **Joshua De Klerk** - [231204@virtualwindow.co.za](mailto:231204@virtualwindow.co.za)
+- **Project Link** - https://github.com/JoshuaDeKlerk/CasaVista
+
+## Acknowledgements
+
+- [Stack Overflow](https://stackoverflow.com/)
+- [Figma](https://www.figma.com/)
+- [Lecturer](https://github.com/TsungaiKats)
+- [Adobe Stock](https://stock.adobe.com/za/)
