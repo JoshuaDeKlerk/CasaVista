@@ -15,7 +15,7 @@ CasaVista is a retail site where you can purchase properties or even list your o
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 [![xampp](https://img.shields.io/badge/xampp-750000?style=for-the-badge&logo=xampp&logoColor=#FB7A24)](https://www.php.net/docs.php)
 
-<img src="./Assets/ReadMe/HomePage.png" alt="CasaVista Home Image" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);">
+<img src="./Assets/ReadMe/HomePage.png" alt="CasaVista Home Image" style="box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);">
 
 ## How To Install
 
@@ -87,3 +87,16 @@ git clone https://github.com/JoshuaDeKlerk/CasaVista.git
 | Individual Page  | - Allows users to see the properties details        |
 |                       | - Provides the ability to buy the property |
 | Settings Page  | - Allows users to change their details        |
+
+## The Idea
+
+The idea was to create a rental website where users can post houses or apartments to sell. It should be easy for users to find their dream home and it should be a website where agents can easily list homes for sale. The site should have secure security to make sure nobody lists a property that should not be listed.
+
+### Register Page
+![Home Page UI Design](./Assets/ReadMe/UI/SignUp.png)
+
+### Login Page
+![Post Page UI Design](./Assets/ReadMe/UI/Login.png)
+
+### Create a Post Page
+![Create a Post UI Design](./Assets/ReadMe/UI/Home.png)
