@@ -123,7 +123,7 @@ The idea was to create a rental website where users can post houses or apartment
 ![CasaVista Mockup 1](./Assets/ReadMe/MockUps/SignUp.png)
 
 ### Login Mockup
-![CasaVista Mockup 1](./Assets/ReadMe/MockUps/Login.png)
+![CasaVista Mockup 1](./Assets/ReadMe/MockUps/login.png)
 
 ### Home Mockup
 ![CasaVista Mockup 1](./Assets/ReadMe/MockUps/Home.png)
