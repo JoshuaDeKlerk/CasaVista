@@ -87,7 +87,10 @@ if ($result) {
     <!-- Include Navbar -->
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/CasaVista/Components/navbar.php'; ?>
 
-    <div class="container mt-5">
+    <div class="AdminContainer" style="    width: 100%;
+    background-color: #393939;
+    padding: 20px 100px;
+    min-height: 100vh;">
         <h2>Pending Property Approvals</h2>
         <?php if (count($property_requests) > 0): ?>
             <ul class="list-group">

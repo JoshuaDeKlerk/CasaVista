@@ -1,21 +1,11 @@
-.container {
-    max-width: 900px;
-    margin: 0 auto;
+.AdminContainer {
+    width: 100%;
+    background-color: #393939;
+    padding: 20px 100px;
+    min-height: 100vh;
 }
 
-.property-info {
-    display: flex;
-    align-items: center;
-}
 
-.property-image {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.btn-group {
-    display: flex;
-    gap: 10px;
+.AdminContainer h2{
+    color: #E9E9E9;
 }

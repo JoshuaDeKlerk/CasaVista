@@ -11,7 +11,10 @@ $email = $_SESSION["user"];
 
 // Fetch all properties added by the logged-in agent/admin
 $properties = [];
-$sql = "SELECT * FROM property_requests WHERE agent_email = ?";
+$sql = "SELECT pr.*, 
+        (SELECT image_link FROM property_images WHERE property_id = pr.id LIMIT 1) AS image_link
+        FROM property_requests pr 
+        WHERE pr.agent_email = ?";
 $stmt = mysqli_stmt_init($conn);
 if (mysqli_stmt_prepare($stmt, $sql)) {
     mysqli_stmt_bind_param($stmt, "s", $email);
@@ -58,22 +61,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_property'])) {
         <?php if (count($properties) > 0): ?>
             <ul class="list-group">
                 <?php foreach ($properties as $property): ?>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        <div>
-                            <h5><?php echo htmlspecialchars($property['property_name']); ?></h5>
-                            <p><?php echo htmlspecialchars($property['property_description']); ?></p>
-                            <p><strong>Price:</strong> R<?php echo number_format($property['property_price'], 2); ?></p>
-                            <p><strong>Year Built:</strong> <?php echo htmlspecialchars($property['year_built']); ?></p>
-                            <p><strong>Status:</strong> <?php echo htmlspecialchars($property['property_status']); ?></p>
-                            <p><strong>Bedrooms:</strong> <?php echo htmlspecialchars($property['bedrooms']); ?></p>
-                            <p><strong>Bathrooms:</strong> <?php echo htmlspecialchars($property['bathrooms']); ?></p>
+                    <li class="list-group-item d-flex">
+                        <div class="property-image-container">
+                            <img src="<?php echo htmlspecialchars($property['image_link'] ?? '/path/to/default/image.jpg'); ?>" alt="Property Image" class="property-image">
                         </div>
-                        <div>
-                            <a href="/CasaVista/Pages/edit_property.php?id=<?php echo $property['id']; ?>" class="btn btn-warning mb-2">Edit</a>
-                            <form action="properties.php" method="POST" class="d-inline-block">
-                                <input type="hidden" name="property_id" value="<?php echo $property['id']; ?>">
-                                <button type="submit" name="delete_property" class="btn btn-danger">Remove</button>
-                            </form>
+                        <div class="property-details flex-grow-1 ms-3">
+                            <h5><?php echo htmlspecialchars($property['property_name']); ?></h5>
+                            <p><strong>Price:</strong> R<?php echo number_format($property['property_price'], 2); ?></p>
+                            <p><strong>Status:</strong> <?php echo htmlspecialchars($property['property_status']); ?></p>
+                            <div class="btn-group mt-3">
+                                <a href="/CasaVista/Pages/edit_property.php?id=<?php echo $property['id']; ?>" class="btn btn-warning">Edit</a>
+                                <form action="properties.php" method="POST" class="d-inline-block ms-2">
+                                    <input type="hidden" name="property_id" value="<?php echo $property['id']; ?>">
+                                    <button type="submit" name="delete_property" class="btn btn-danger">Remove</button>
+                                </form>
+                            </div>
                         </div>
                     </li>
                 <?php endforeach; ?>
