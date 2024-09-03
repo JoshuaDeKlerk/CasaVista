@@ -77,16 +77,16 @@ if ($property_id) {
 
             // Handle adding property to favorites
             if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['add_to_favorites'])) {
-                $favorites_sql = "INSERT INTO favorites (user_email, property_id) VALUES (?, ?)";
-                $favorites_stmt = mysqli_stmt_init($conn);
-                if (mysqli_stmt_prepare($favorites_stmt, $favorites_sql)) {
-                    mysqli_stmt_bind_param($favorites_stmt, "si", $email, $property_id);
-                    mysqli_stmt_execute($favorites_stmt);
-                    // Redirect to the favorites page
-                    header("Location: /CasaVista/Pages/favorites.php");
+                $favourites_sql = "INSERT INTO favourites (user_email, property_id) VALUES (?, ?)";
+                $favourites_stmt = mysqli_stmt_init($conn);
+                if (mysqli_stmt_prepare($favourites_stmt, $favourites_sql)) {
+                    mysqli_stmt_bind_param($favourites_stmt, "si", $email, $property_id);
+                    mysqli_stmt_execute($favourites_stmt);
+                    // Redirect to the favourites page
+                    header("Location: /CasaVista/Pages/favourites.php");
                     exit();
                 } else {
-                    echo "Error adding to favorites.";
+                    echo "Error adding to favourites.";
                 }
             }
 
@@ -144,9 +144,9 @@ if ($property_id) {
                 <!-- Thumbnail Images -->
                 <div class="row">
                     <?php for ($i = 1; $i <= 4; $i++): ?>
-                        <div class="col-3">
+                        <div class="col-3 thumbnail">
                             <?php if (!empty($images[$i])): ?>
-                                <img src="<?php echo htmlspecialchars($images[$i]); ?>" alt="Property Image <?php echo $i + 1; ?>" class="img-fluid">
+                                <img src="<?php echo htmlspecialchars($images[$i]); ?>" alt="Property Image <?php echo $i + 1; ?>" class="thumbnail img-fluid">
                             <?php else: ?>
                                 <div class="thumbnail-placeholder">Image <?php echo $i + 1; ?></div>
                             <?php endif; ?>
@@ -195,7 +195,7 @@ if ($property_id) {
             <h4>Agent Information</h4>
             <div class="d-flex align-items-center">
                 <div class="agent-picture">
-                    <img src="<?php echo htmlspecialchars($agent['profile_picture']); ?>" alt="Agent Picture" class="img-fluid rounded-circle" style="width: 100px; height: 100px;">
+                    <img src="<?php echo htmlspecialchars('/CasaVista' . $agent['profile_picture']); ?>" alt="Agent Picture" class="img-fluid rounded-circle" style="width: 100px; height: 100px;">
                 </div>
                 <div class="ms-3">
                     <h5><?php echo htmlspecialchars($agent['full_name']); ?></h5>
