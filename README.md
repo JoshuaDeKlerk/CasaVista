@@ -2,6 +2,33 @@
 
 - - - -
 
+## Table of Contents
+
+1. [About CasaVista](#about-casavista)
+2. [Built With](#built-with)
+3. [How To Install](#how-to-install)
+   - [Step 1: Clone the Repository](#step-1-clone-the-repository)
+   - [Step 2: Setting Up the Environment](#step-2-setting-up-the-environment)
+   - [Step 3: Running the Project](#step-3-running-the-project)
+   - [Step 4: Additional Notes](#step-4-additional-notes)
+4. [Features](#features)
+5. [The Idea](#the-idea)
+6. [Development Process](#development-process)
+   - [Highlights](#highlights)
+   - [Challenges](#challenges)
+7. [Future Implementations](#future-implementations)
+8. [Mockups](#mockups)
+   - [Register Mockup](#register-mockup)
+   - [Login Mockup](#login-mockup)
+   - [Home Mockup](#home-mockup)
+9. [Demonstration](#demonstration)
+10. [License](#license)
+11. [Author](#author)
+12. [Contact](#contact)
+13. [Acknowledgements](#acknowledgements)
+
+- - - -
+
 # About CasaVista
 
 CasaVista is a retail site where you can purchase properties or even list your own properties. The UI is simple to understand and very functional. On CasaVista, you can choose your dream property.
